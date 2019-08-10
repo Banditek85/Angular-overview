@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+a { text-decoration: none; color: salmon}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.active_link {
+color: blue;
+}
