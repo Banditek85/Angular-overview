@@ -1,1 +1,25 @@
-<p>routing works!</p>
+<div class="component-container">
+
+    <h3>Routing</h3>
+
+    <p>This component can read and will display route parameters entered after the "/routing"
+        part of URL. Button below will navigate the router programmatically to it's child routes
+        which are also child components of this component.</p>
+
+    <div>
+        <label>Enter number which will be used as a parameter for child route and click navigate: </label>
+        <input #route_number type="number">
+    </div>
+
+    <!-- We are passing route_number which is a local reference of input abote to this function -->
+    <p>
+        <button (click)="onNavigate(route_number)" class="button-primary">Navigate!</button>
+    </p>
+    <hr>
+        <p>This button will navigate to same component but will also pass query parameters and fragments.</p>
+        <button (click)="onNavigateWithQueryParams()" class="button-primary">Navigate with query params and
+            fragments</button>
+
+    <!-- Nested router-outlet for displaying child routes of this route -->
+    <router-outlet></router-outlet>
+</div>

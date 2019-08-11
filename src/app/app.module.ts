@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ObservablesComponent } from './observables/observables.component';
 import { RoutingComponent } from './routing/routing.component';
+import { RoutingChildOneComponent } from './routing/routing-child-one/routing-child-one.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RoutingComponent } from './routing/routing.component';
     HomeComponent,
     ServicesComponent,
     ObservablesComponent,
-    RoutingComponent
+    RoutingComponent,
+    RoutingChildOneComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
 .container {
     border: 3px solid cornflowerblue;
     border-radius: 10px;
+    min-height: 800px;
     box-sizing: border-box;
-    height: 400px;
     display: flex;
 }
 
@@ -28,7 +28,6 @@ aside ul li {
 }
 
 #router_outlet {
-    background-color: beige;
     padding: 10px 20px 20px 40px;
     width: 75%;
 }
